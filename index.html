@@ -3,6 +3,7 @@
 <head>
 	<title>Пример сайта-визитки</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 	<meta charset="utf-8">
@@ -12,11 +13,10 @@
   <div class="mast-nav">
     <div class="container">
       <div class="row">
-        <div class="col-md-7 logo">
-        </div>
-        <div class="col-md-5">
-          <p>Телефон: <a href="tel:+1234567890">+1 (234) 567 89 00</a><br>
-          ФАКС: +7 (347) 260 99 18 <br>
+        <div class="col-md-1 col-sm-5 logo"></div>
+        <div class="col-md-7 logoname"></div>
+        <div class="col-md-4 col-sm-7">
+          <p class="contact">Телефон: <a href="tel:+1234567890">+1 (234) 567 89 00</a><br>
           E-mail: <a href="mailto:vika@kaptn.ru">vika@kaptn.ru</a></p>
         </div>
       </div>
@@ -47,24 +47,29 @@
       </div>
     </nav>
     </div>
-    <div class="intro"><a href="#slide" class="more scrolly scroll"></a></div>
+    <div class="intro"><a href="#slide" class="more scrolly scroll"><i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i></a></div>
     <div class="bd-pageheader" id="slide">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item item1 active">
-            <div class="carousel-caption d-none d-md-block">
+            <!--div class="carousel-caption d-none d-md-block">
               <h2>Lorem ipsum dolor sit amet</h2>
-            </div>
+            </div-->
           </div>
           <div class="carousel-item item2">
-            <div class="carousel-caption d-none d-md-block">
+            <!--div class="carousel-caption d-none d-md-block">
               <h2>consectetur adipisicing elit</h2>
-            </div>
+            </div-->
           </div>
           <div class="carousel-item item3">
-            <div class="carousel-caption d-none d-md-block">
+            <!--div class="carousel-caption d-none d-md-block">
               <h2>sed do eiusmod tempor incididunt ut</h2>
-            </div>
+            </div-->
+          </div>
+          <div class="carousel-item item4">
+            <!--div class="carousel-caption d-none d-md-block">
+              <h2>sed do eiusmod tempor incididunt ut</h2>
+            </div-->
           </div>
         </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -76,7 +81,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      <a href="#one" class="more scrolly scroll"></a>
+      <a href="#one" class="more scrolly scroll"><i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i></a>
     </div>
   </header>
   <div id="one">
@@ -86,39 +91,51 @@
     <div class="container">
       <div class="row advant">
         <div class="col-sm-12 col-md-6">
-          <div class="icons li-1">
-            <h4>Функции генерального подрядчика</h4>
+          <div class="icons">
+            <div class="icon"><i class="fa fa-users fa-4x" aria-hidden="true"></i>
+              <h4>Функции генерального подрядчика</h4>
+            </div>
             <p>ПАО «АК ВНЗМ» крупная подрядная строительно-монтажная компания.</p>
             <p>Возможность реализации EPC контрактов – выполнение работ «под ключ».</p>
             <p>Участие одновременно в нескольких крупных проектах с численностью работников более 2000 человек.</p>
             <p>Привлечение порядка 55 организаций на усло-виях договоров подряда</p>
           </div>
-          <div class="icons li-2">
-            <h4>Производственные ресурсы</h4>
+          <div class="icons">
+            <div class="icon"><i class="fa fa-cogs fa-4x" aria-hidden="true"></i>
+              <h4>Производственные ресурсы</h4>
+            </div>
             <p>- 9 монтажных фирм, оснащенных цехами трубных заготовок (г.Уфа, Салават, Стерлитамак, Мелеуз), 2 строительные фирмы (г. Уфа, Салават), а также 2 собственных завода по изготовлению металлоконструкций (г. Уфа, Салават).</p>
             <p>- собственные лаборатории неразрушающего контроля, служба диагностики, контроля металла и сварки, строительная лаборатория</p>
             <p>- более 760 единиц сварочного оборудования</p>
             <p>- более 53 аттестованных технологий сварки</p>
             <p>- более 2000 единиц машин и механизмов</p>
           </div>
-          <div class="icons li-3">
-            <h4>Социальная ответственность</h4>
+          <div class="icons">
+            <div class="icon"><i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
+              <h4>Социальная ответственность</h4>
+            </div>
             <p>Соблюдение требований природоохранного законодательства</p>
             <p>Сотрудничество с ведущими ВУЗами республики, поддержка гандбольного клуба «УГНТУ-ВНЗМ»</p>
             <p>Собственный профсоюз, многочисленные льготы сотрудникам предприятия</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-6">
-          <div class="icons li-4">
-            <h4>Мобильность</h4>
+          <div class="icons">
+            <div class="icon"><i class="fa fa-rocket fa-4x" aria-hidden="true"></i>
+              <h4>Мобильность</h4>
+            </div>
             <p>Возможность быстрой мобилизации в любую точку России, транспортировка оборудования, техники, организация проживания и питания на объекте</p>
           </div>
-          <div class="icons li-5">
-            <h4>Безопасность</h4>
+          <div class="icons">
+            <div class="icon"><i class="fa fa-fort-awesome fa-4x" aria-hidden="true"></i>
+              <h4>Безопасность</h4>
+            </div>
             <p>Безопасные условия производства и полно- ценно функционирующая система охраны труда являются обязательным элементом управления предприятием ПАО «АК ВНЗМ»</p>
           </div>
-          <div class="icons li-6">
-            <h4>Широкий комплекс услуг</h4>
+          <div class="icons">
+            <div class="icon"><i class="fa fa-certificate fa-4x" aria-hidden="true"></i>
+              <h4>Широкий комплекс услуг</h4>
+            </div>
             <p>Комплексное строительство объектов, от проектирования до пусконаладочных работ. Выполнение отдельных видов работ, большинство из которых выполняются собственными силами.</p>
             <p>Реализация проектов по строительству разных отраслей промышленности:</p>
             <p>- объекты топливно-энергетического комплекса</p>
@@ -127,15 +144,17 @@
             <p>- объекты черной и цветной металлургии</p>
             <p>- объекты инфраструктуры - гражданское и жилищное строительство</p>
             </div>
-            <div class="icons li-7">
-              <h4>Кадровый ресурс</h4>
+            <div class="icons">
+              <div class="icon"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
+                <h4>Кадровый ресурс</h4>
+              </div>
               <p>более 5000 собственных квалифицированных специалистов и работников, в том числе 550 аттестованных сварщиков</p>
             </div>
           </div>
         </div>
       </div>
       <div class="btn-more">
-        <a href="#" role="button" aria-pressed="true" class="btn btn-outline-primary btn-lg">подробнее</a>
+        <a href="#" role="button" aria-pressed="true" class="btn btn-outline-warning btn-lg">подробнее</a>
       </div>
     </div><!-- end main -->
 

@@ -1,22 +1,34 @@
 /* Global */
 
 .more {
-  background-image: url("../img/down-arrow.svg");
+  /*background-image: url("../img/down-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 0;
+  border: 0;*/  
+  color: #fff;
+  opacity: 0.7;
   bottom: 1em;
-  display: block;
-  height: 3em;
   left: 50%;
   margin: 0 0 0 -2em;
-  overflow: hidden;
   position: absolute;
-  text-indent: 10em;
-  white-space: nowrap;
+  /*text-indent: 10em;*/
+  /*white-space: nowrap;*/
   width: 4em;
   z-index: 1;
+  text-decoration: none;
+  transition: opacity 1s ease;
+}
+
+.more:hover {
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.more:hover,
+.more:active,
+.more:focus {  
+  color: #fff;
 }
 
 .cf:before,
@@ -33,9 +45,16 @@
 /* Header */
 
 .logo {
-  background-image: url("../img/logo.jpg");
+  background-image: url("../img/logo1.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+}
+.logoname {
+  background-image: url("../img/logo2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .intro {
@@ -43,6 +62,10 @@
   background: url(../img/slide4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.contact {
+  padding-top: 20px;
 }
 
 .mast-nav {
@@ -63,15 +86,43 @@
   position: relative;
 }
 
+.item1 {
+  background:url(../img/s1.jpg);
+}
+
+.item2 {
+  background:url(../img/s2.jpg);
+}
+
+.item3 {
+  background:url(../img/s3.jpg);
+}
+
+.item4 {
+  background:url(../img/s4.jpg);
+}
+
 .item1,
 .item2,
-.item3 {
+.item3,
+.item4 {
   height: 100vh;
-  background-color: #eea;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel-caption {
   bottom: 39%;
+}
+
+@media (max-width: 768px) {
+  .logo {
+      min-height: 100px;
+  }
+  .logoname {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -97,13 +148,12 @@
   text-transform: uppercase;
 }
 
-.icons:before {
-  content: "";
-  display: block;
-  width: 68px;
-  height: 78px;
-  margin: 0 auto;
-  background: url(../img/VNZM_site_icons.jpg) no-repeat;
+.icon {
+  text-align: center;  
+}
+.icons i {
+  color: #FC8D21;
+  padding-bottom: 20px;
 }
 
 .advant {
@@ -113,43 +163,17 @@
 .btn-more {
   text-align: center; 
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .btn-more a {
   text-transform: uppercase;
 }
 
-/* Icons */
-
-.icons h4 {
-  text-align: center;
-}
-.li-1 {
-  background-position: 0;
-}
-.li-2:before {
-  background-position: 0 -75px;
-}
-.li-3:before  {
-  background-position: 0 -469px;
-}
-.li-4:before  {
-  background-position: 0 -234px;
-}
-.li-5:before  {
-  background-position: 0 -312px;
-}
-.li-6:before  {
-  background-position: 0 -390px;
-}
-.li-7:before  {
-  background-position: 0 -155px;
-}
-
 /* Footer */
 
 #footer {
-  background-color: #eee; 
+  background-color: #5BADC0; 
   padding-top: 20px;
 }
 
