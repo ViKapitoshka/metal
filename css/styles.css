@@ -1,0 +1,155 @@
+/* Global */
+
+.more {
+  background-image: url("../img/down-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  bottom: 1em;
+  display: block;
+  height: 3em;
+  left: 50%;
+  margin: 0 0 0 -2em;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 10em;
+  white-space: nowrap;
+  width: 4em;
+  z-index: 1;
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; /* margin блока внутри div включается в размер div*/
+}
+
+.line {
+  background-color: #1269F7;
+  height: 5px;
+}
+
+/* Header */
+
+.logo {
+  background-image: url("../img/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.intro {
+  height:100vh; 
+  background: url(../img/slide4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mast-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #fff;
+}
+
+.mast-nav .container .row {
+  padding-top: 20px; 
+  padding-bottom: 15px;
+}
+
+#slide {
+  position: relative;
+}
+
+.item1,
+.item2,
+.item3 {
+  height: 100vh;
+  background-color: #eea;
+}
+
+.carousel-caption {
+  bottom: 39%;
+}
+
+@media (max-width: 576px) {
+  .cont-mast {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-toggleable-md>.cont-mast {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Main */
+
+.head {
+  padding-top: 18px;
+  padding-bottom: 10px;
+  text-align: center; 
+  background-color: #eee;
+  text-transform: uppercase;
+}
+
+.icons:before {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 78px;
+  margin: 0 auto;
+  background: url(../img/VNZM_site_icons.jpg) no-repeat;
+}
+
+.advant {
+  padding-top: 50px;
+}
+
+.btn-more {
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.btn-more a {
+  text-transform: uppercase;
+}
+
+/* Icons */
+
+.icons h4 {
+  text-align: center;
+}
+.li-1 {
+  background-position: 0;
+}
+.li-2:before {
+  background-position: 0 -75px;
+}
+.li-3:before  {
+  background-position: 0 -469px;
+}
+.li-4:before  {
+  background-position: 0 -234px;
+}
+.li-5:before  {
+  background-position: 0 -312px;
+}
+.li-6:before  {
+  background-position: 0 -390px;
+}
+.li-7:before  {
+  background-position: 0 -155px;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #eee; 
+  padding-top: 20px;
+}
+
