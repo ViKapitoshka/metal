@@ -27,6 +27,10 @@
     .carousel-caption {
       bottom: 39%;
     }
+    .hd {
+      padding-top: 18px;
+      padding-bottom: 10px;
+    }
     .cf:before,
     .cf:after {
       content: "";
@@ -43,6 +47,43 @@
         padding-right: 15px;
       }
     }
+    .icons:before {
+      content: "";
+      display: block;
+      width: 68px;
+      height: 78px;
+      margin: 0 auto;
+      background: url(img/VNZM_site_icons.jpg) no-repeat;
+    }
+    .icons h4 {
+      text-align: center;
+    }
+    /* Icons */
+    .li-1 {
+      background-position: 0;
+    }
+    .li-2:before {
+      background-position: 0 -75px;
+    }
+    .li-3:before  {
+      background-position: 0 -469px;
+    }
+    .li-4:before  {
+      background-position: 0 -234px;
+    }
+    .li-5:before  {
+      background-position: 0 -312px;
+    }
+    .li-6:before  {
+      background-position: 0 -390px;
+    }
+    .li-7:before  {
+      background-position: 0 -155px;
+    }
+    .line {
+      background-color: #beb;
+      height: 5px;
+    }
   </style>
 </head>
 <body>
@@ -52,7 +93,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="container cont-mast">
-        <a class="navbar-brand" href="#">Lorem</a>
+        <a class="navbar-brand" href="#">Название компании</a>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -63,6 +104,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">sit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#footer">Контакты</a>
             </li>
           </ul>
         </div>
@@ -96,78 +140,86 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      <a href="#one" class="more scrolly"></a>
+      <a href="#one" class="more scrolly scroll"></a>
     </div>
   </header>
   <div id="one" style="">
-    <div style="text-align: center; background-color: #eee;text-transform: uppercase;" class="cf">
-      <h1>consectetur</h1>
+    <div style="text-align: center; background-color: #eee;text-transform: uppercase;" class="cf hd">
+      <h2>преимущества</h2>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row" style="padding-top: 50px;">
         <div class="col-sm-12 col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="icons li-1">
+            <h4>Функции генерального подрядчика</h4>
+            <p>ПАО «АК ВНЗМ» крупная подрядная строительно-монтажная компания.</p>
+            <p>Возможность реализации EPC контрактов – выполнение работ «под ключ».</p>
+            <p>Участие одновременно в нескольких крупных проектах с численностью работников более 2000 человек.</p>
+            <p>Привлечение порядка 55 организаций на усло-виях договоров подряда</p>
+          </div>
+          <div class="icons li-2">
+            <h4>Производственные ресурсы</h4>
+            <p>- 9 монтажных фирм, оснащенных цехами трубных заготовок (г.Уфа, Салават, Стерлитамак, Мелеуз), 2 строительные фирмы (г. Уфа, Салават), а также 2 собственных завода по изготовлению металлоконструкций (г. Уфа, Салават).</p>
+            <p>- собственные лаборатории неразрушающего контроля, служба диагностики, контроля металла и сварки, строительная лаборатория</p>
+            <p>- более 760 единиц сварочного оборудования</p>
+            <p>- более 53 аттестованных технологий сварки</p>
+            <p>- более 2000 единиц машин и механизмов</p>
+          </div>
+          <div class="icons li-3">
+            <h4>Социальная ответственность</h4>
+            <p>Соблюдение требований природоохранного законодательства</p>
+            <p>Сотрудничество с ведущими ВУЗами республики, поддержка гандбольного клуба «УГНТУ-ВНЗМ»</p>
+            <p>Собственный профсоюз, многочисленные льготы сотрудникам предприятия</p>
+          </div>
         </div>
         <div class="col-sm-12 col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="icons li-4">
+            <h4>Мобильность</h4>
+            <p>Возможность быстрой мобилизации в любую точку России, транспортировка оборудования, техники, организация проживания и питания на объекте</p>
+          </div>
+          <div class="icons li-5">
+            <h4>Безопасность</h4>
+            <p>Безопасные условия производства и полно- ценно функционирующая система охраны труда являются обязательным элементом управления предприятием ПАО «АК ВНЗМ»</p>
+          </div>
+          <div class="icons li-6">
+            <h4>Широкий комплекс услуг</h4>
+            <p>Комплексное строительство объектов, от проектирования до пусконаладочных работ. Выполнение отдельных видов работ, большинство из которых выполняются собственными силами.</p>
+            <p>Реализация проектов по строительству разных отраслей промышленности:</p>
+            <p>- объекты топливно-энергетического комплекса</p>
+            <p>- объекты химической и нефтехимической промышленности</p>
+            <p>- объекты машиностроения и металлообработки</p>
+            <p>- объекты черной и цветной металлургии</p>
+            <p>- объекты инфраструктуры - гражданское и жилищное строительство</p>
+            </div>
+            <div class="icons li-7">
+              <h4>Кадровый ресурс</h4>
+              <p>более 5000 собственных квалифицированных специалистов и работников, в том числе 550 аттестованных сварщиков</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>    
+  </div><!-- end main -->
+
+  <div class="line"></div>
+  <footer id="footer" style="background-color: #eee; padding-top: 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Мы ВКонтакте</h4>
+        </div>
+        <div class="col-md-6">
+          <h4>Телефон: <a href="tel:+1234567890">+1234567890</a></h4>
+          <h4>E-mail: <a href="mailto:vika@kaptn.ru">vika@kaptn.ru</a></h4>
         </div>
       </div>
     </div>
-    
-  </div>
-  <footer>
-    
   </footer>
-</body>
-  
-  <script src="js/jquery.min.js"></script>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/transition.js"></script>
+</body> 
 </html>
