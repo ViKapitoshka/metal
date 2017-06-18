@@ -28,7 +28,7 @@
   display: table; /* margin блока внутри div включается в размер div*/
 }
 .line {
-  background-color: #1269F7;
+  background-color: #FC8D21;
   height: 5px;
 }
 /* Header */
@@ -174,17 +174,44 @@
 }
 .btn-more {
   text-align: center; 
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-top: 40px;
 }
 .btn-more a {
   text-transform: uppercase;
 }
 
+.partners {
+  background-color: #FFBA75;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.partners h3 {
+  text-align: center;
+  text-transform: uppercase; 
+  padding-bottom: 20px;
+  color: #fff;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+
+@media (max-width: 767px) {
+  #carouselPartn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .partn-mob {
+    display: none;
+  }
+}
+
 /* Footer */
 
 #footer {
-  background-color: #5BADC0; 
+  background-color: #f7f7f7; 
   padding-top: 20px;
 }
 
