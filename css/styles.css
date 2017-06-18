@@ -1,5 +1,7 @@
 /* Global */
-
+a {
+  color: #D46B03;
+}
 .more {
   color: #fff;
   opacity: 0.7;
@@ -195,10 +197,16 @@
 .carousel-indicators {
   bottom: -50px;
 }
+.partners .partn-mob .row {
+  padding-bottom: 15px;
+}
 
 @media (max-width: 767px) {
   #carouselPartn {
     display: none;
+  }
+  .partners {
+    padding-bottom: 20px;
   }
 }
 
@@ -215,3 +223,8 @@
   padding-top: 20px;
 }
 
+@media (max-width: 576px) {
+  #footer {
+    text-align: center;
+  }
+}
