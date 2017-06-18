@@ -1,5 +1,8 @@
 /* Global */
-a {
+a
+a:hover,
+a:active,
+a:focus {
   color: #D46B03;
 }
 .more {
@@ -177,7 +180,7 @@ a {
 .btn-more {
   text-align: center; 
   margin-bottom: 50px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .btn-more a {
   text-transform: uppercase;
@@ -197,19 +200,11 @@ a {
 .carousel-indicators {
   bottom: -50px;
 }
-.partners .partn-mob .row {
-  padding-bottom: 15px;
-}
-
 @media (max-width: 767px) {
-  #carouselPartn {
+  .partn {
     display: none;
   }
-  .partners {
-    padding-bottom: 20px;
-  }
 }
-
 @media (min-width: 768px) {
   .partn-mob {
     display: none;
