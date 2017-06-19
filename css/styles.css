@@ -1,5 +1,5 @@
 /* Global */
-a
+a,
 a:hover,
 a:active,
 a:focus {
@@ -118,7 +118,6 @@ a:focus {
     padding: 10px 0 5px 15px;
   }
 }
-
 @media (max-width: 768px) {
   .intro {
     display: none;
