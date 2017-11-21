@@ -166,6 +166,13 @@ a {
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .about {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .head {
   padding-top: 18px;
   padding-bottom: 10px;
@@ -233,7 +240,7 @@ a {
 
 #footer {
   background-color: #f7f7f7; 
-  padding-top: 20px;
+  padding: 50px 0;
 }
 
 @media (max-width: 576px) {
