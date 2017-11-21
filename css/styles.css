@@ -1,8 +1,5 @@
 /* Global */
-a,
-a:hover,
-a:active,
-a:focus {
+a {
   color: #D46B03;
 }
 .more {
@@ -79,6 +76,10 @@ a:focus {
   padding-bottom: 15px;
 }
 
+.navbar {
+  width: 100%;
+}
+
 /* Slides */
 
 #slide {
@@ -118,6 +119,7 @@ a:focus {
     padding: 10px 0 5px 15px;
   }
 }
+
 @media (max-width: 768px) {
   .intro {
     display: none;
@@ -159,6 +161,11 @@ a:focus {
 
 /* Main */
 
+.about {
+  padding: 50px 30px;
+  text-align: justify;
+}
+
 .head {
   padding-top: 18px;
   padding-bottom: 10px;
@@ -179,10 +186,14 @@ a:focus {
 .btn-more {
   text-align: center; 
   margin-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .btn-more a {
   text-transform: uppercase;
+}
+
+#two {
+  padding-bottom: 50px;
 }
 
 .partners {
@@ -199,11 +210,19 @@ a:focus {
 .carousel-indicators {
   bottom: -50px;
 }
+.partners .partn-mob .row {
+  padding-bottom: 15px;
+}
+
 @media (max-width: 767px) {
-  .partn {
+  #carouselPartn {
     display: none;
   }
+  .partners {
+    padding-bottom: 20px;
+  }
 }
+
 @media (min-width: 768px) {
   .partn-mob {
     display: none;
